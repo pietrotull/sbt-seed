@@ -7,8 +7,8 @@ name := "some-new-project"
 val dispatchVersion = "0.13.2"
 
 libraryDependencies ++= Seq(
-  "net.databinder.dispatch" 	%%  "dispatch-core"           % dispatchVersion
-  "net.databinder.dispatch" 	%%  "dispatch-json4s-native"  % dispatchVersion
+  "net.databinder.dispatch" 	%%  "dispatch-core"           % dispatchVersion,
+  "net.databinder.dispatch" 	%%  "dispatch-json4s-native"  % dispatchVersion,
   "org.json4s"              	%%  "json4s-ext"              % "3.5.3",
   "ch.qos.logback"              %   "logback-classic"         % "1.2.3",
   "com.typesafe"                %   "config"                  % "1.3.1",
