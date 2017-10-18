@@ -7,13 +7,13 @@ name := "some-new-project"
 val dispatchVersion = "0.13.2"
 
 libraryDependencies ++= Seq(
-  "net.databinder.dispatch" 	%%  "dispatch-core"           % dispatchVersion,
-  "net.databinder.dispatch" 	%%  "dispatch-json4s-native"  % dispatchVersion,
-  "org.json4s"              	%%  "json4s-ext"              % "3.5.3",
+  "net.databinder.dispatch"     %%  "dispatch-core"           % dispatchVersion,
+  "net.databinder.dispatch"     %%  "dispatch-json4s-native"  % dispatchVersion,
+  "org.json4s"                  %%  "json4s-ext"              % "3.5.3",
   "ch.qos.logback"              %   "logback-classic"         % "1.2.3",
   "com.typesafe"                %   "config"                  % "1.3.1",
   "com.typesafe.scala-logging"  %%  "scala-logging"           % "3.7.2",
-  "org.scalatest"           	%% 	"scalatest"               % "3.0.3" 			% Test,
+  "org.scalatest"               %% 	"scalatest"               % "3.0.3" 			      % Test,
   "org.mockito"                 %   "mockito-all"             % "1.10.19"           % Test
 )
 
