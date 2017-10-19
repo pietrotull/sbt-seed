@@ -2,7 +2,7 @@
 organization := "io.sqooba"
 scalaVersion := "2.12.3"
 version      := "0.1.0-SNAPSHOT"
-name := "some-new-project"
+name         := "some-new-project"
 
 val dispatchVersion = "0.13.2"
 
@@ -19,8 +19,10 @@ libraryDependencies ++= Seq(
 
 excludeDependencies ++= Seq("org.slf4j" % "slf4j-log4j12", "log4j" % "log4j")
 
-lazy val E2e = config("e2e").extend(Test)
-configs(E2e)
-inConfig(E2e)(Defaults.testTasks)
-testOptions in E2e -= Tests.Argument("-l", "E2E")
-testOptions in E2e += Tests.Argument("-n", "E2E")
+testOptions in Test += Tests.Argument("-l", "ExternalSpec")
+
+lazy val External = config("ext").extend(Test)
+configs(External)
+inConfig(External)(Defaults.testTasks)
+testOptions in External -= Tests.Argument("-l", "ExternalSpec")
+testOptions in External += Tests.Argument("-n", "ExternalSpec")
