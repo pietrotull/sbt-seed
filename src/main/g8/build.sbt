@@ -1,10 +1,10 @@
 
 organization := "io.sqooba"
-scalaVersion := "2.12.3"
+scalaVersion := "2.12.4"
 version      := "0.1.0-SNAPSHOT"
 name         := "some-new-project"
 
-val dispatchVersion = "0.13.2"
+val dispatchVersion = "0.13.3"
 
 libraryDependencies ++= Seq(
   "net.databinder.dispatch"     %%  "dispatch-core"           % dispatchVersion,
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "ch.qos.logback"              %   "logback-classic"         % "1.2.3",
   "com.typesafe"                %   "config"                  % "1.3.1",
   "com.typesafe.scala-logging"  %%  "scala-logging"           % "3.7.2",
-  "org.scalatest"               %%  "scalatest"               % "3.0.3"             % Test,
+  "org.scalatest"               %%  "scalatest"               % "3.0.4"             % Test,
   "org.mockito"                 %   "mockito-all"             % "1.10.19"           % Test
 )
 
