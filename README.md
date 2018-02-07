@@ -5,13 +5,13 @@ Create new project with:
 `sbt new pietrotull/sbt-seed.g8`
 
 ### Versions:
-- Scala 2.12.3
-- sbt 1.02
+- Scala 2.12.4
+- sbt 1.1.0
 
 ### Includes the following libs:
 ```
-- net.databinder.dispatch     % dispatch-core            % 0.13.2
-- net.databinder.dispatch     % dispatch-json4s-native   % 0.13.2
+- net.databinder.dispatch     % dispatch-core            % 0.13.3
+- net.databinder.dispatch     % dispatch-json4s-native   % 0.13.3
 - org.json4s                  % json4s-ext               % 3.5.3
 - ch.qos.logback              % logback-classic          % 1.2.3
 - com.typesafe                % config                   % 1.3.1
@@ -20,7 +20,7 @@ Create new project with:
 
 ### Testing
 ```
-- org.scalatest               % scalatest                % 3.0.3
+- org.scalatest               % scalatest                % 3.0.4
 - org.mockito                 % mockito-all              % 1.10.19
 ```
 
